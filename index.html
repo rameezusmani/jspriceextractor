@@ -1,0 +1,15 @@
+<html>
+    <head>
+        <title>Extract prices</title>
+        <script src="priceextractor.js"></script>
+    </head>
+    <body>
+        <div id="corpus">
+            Find 1% off at just 99 instead of $100
+        </div>
+        <script type="text/javascript">
+            const prices=new PriceExtractor(document.getElementById('corpus').innerHTML).extract();
+            console.log(prices);
+        </script>
+    </body>
+</html>
